@@ -33,7 +33,7 @@ public class AddressBook implements AddressBookInterface {
 	static String key = "";
 
 	public void addPerson() {
-		fileRead();
+		fileReade();
 		if (countofaddressbook == 0) {
 			System.out.println("***Empty AddressBook ! Press 1 To Create New AddressBook***");
 			int press = scanner.nextInt();
@@ -255,7 +255,7 @@ public class AddressBook implements AddressBookInterface {
 					case 2:
 						System.out.println("Enter New LastName");
 						String lname = scanner.next();
-						linkedList.get(i).setLastNmae(lname);
+						linkedList.get(i).setLastName(lname);
 						break;
 					case 3:
 						System.out.println("Enter New Address");
